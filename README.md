@@ -1,57 +1,46 @@
-# Portfolio Content Guide
+# Vyomesh Chauhan | Cybersecurity Portfolio
 
-Welcome to your new portfolio landing page! The page has been built using Vanilla HTML, CSS, and JavaScript. 
-Follow these instructions to easily change the text, links, and styling.
+Welcome to my personal portfolio repository! This responsive, dark-themed website showcases my skills, academic projects, and daily learning logs as a Cybersecurity student.
 
-## 1. How to Change Text Content
-All the visible text on the website is located in `index.html`. Open `index.html` in your text editor (like VS Code or Notepad).
+## 🚀 Live Demo
+*(You can add your GitHub Pages or Vercel deployment link here later!)*
 
-Search for the `<!-- EDIT: ... -->` comments in the HTML code. These comments point directly to what you can change.
+---
 
-For example, to change your name:
-```html
-<!-- EDIT: Update your name -->
-<h1 class="name">ABHAY RANA</h1>
-```
-Change `ABHAY RANA` to your actual name.
+## 👨‍💻 About Me
+- **Name:** Vyomesh Chauhan
+- **Role:** Cybersecurity Student
+- **Academic Info:** Section CS-1, Batch 2027
+- **Mission:** I learn to break things so others can build them safer. I am passionate about ethical hacking, penetration testing, and building secure systems.
 
-To change your email address for the copy button:
-```html
-<!-- EDIT: Update your email address -->
-<div class="email-container" onclick="copyEmail()">
-    <span id="email-text">hi@abhayrana.com</span> ...
-```
-Change `hi@abhayrana.com` to your email.
+## 🛠️ Built With
+- **Frontend Core:** HTML5, CSS3, Vanilla JavaScript
+- **Styling:** Custom CSS with CSS Variables, Flexbox, and Grid layouts
+- **Design Elements:** Glassmorphism, interactive hover states, dynamic starfield background animation
+- **Icons:** Devicon
 
-## 2. How to Update Links
-In the navigation bar (`<nav>`), you will see a list of links:
-```html
-<li><a href="#about">About</a></li>
-```
-Currently, these link to `#id` anchors on the same page. If you create new pages (like `about.html`), you can change the `href` attribute like this:
-```html
-<li><a href="about.html">About</a></li>
-```
+## 💻 Featured Projects
+1. **Suraksha:** An AI-powered tourist safety monitoring web application built with Python, Node.js, React, and Machine Learning.
+2. **File Compression Tool:** A utility using Huffman Coding, LZW, and zlib to achieve high compression ratios.
+3. **Disk Scheduling Algorithm Simulator:** A graphical simulator for OS disk scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN) using Python and Tkinter.
 
-For the "Resume" link, replace `#resume` with the path to your PDF file:
-```html
-<li><a href="assets/my-resume.pdf" class="resume-link" target="_blank">Resume</a></li>
-```
+## 📚 Features
+- **Responsive Layout:** Automatically adapts from desktop to mobile screens.
+- **Dynamic Starfield Background:** A custom HTML5 Canvas animation that renders a subtle, moving starfield.
+- **Interactive Modals:** Class logs and certificates open in sleek popup modals.
+- **Embedded Media:** Includes an inline video player for presentation recordings and PDF linking for resumes.
+- **Quick Connect:** Click-to-copy email address functionality and direct LinkedIn integration.
 
-## 3. How to Change Colors
-The colors are managed using CSS variables. Open `style.css` and look at the very top:
-```css
-:root {
-    --bg-color: #08080a;
-    --text-primary: #ffffff;
-    --accent-red: #ff3344;
-    /* ... */
-}
-```
-If you want to change the red button and badge to blue, simply change `--accent-red: #ff3344;` to `--accent-red: #3366ff;`.
+## ⚙️ How to Run Locally
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Vyomesh-001/Portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio
+   ```
+3. Open `index.html` in your favorite web browser, or use a local development server like VS Code Live Server for the best experience.
 
-## 4. How to Change the Star Background
-If you want to adjust the stars, open `script.js`.
-At the top, you will see `const numStars = 150;`. You can increase this number for more stars, or decrease it for less.
-
-Enjoy your new portfolio!
+---
+*Built with passion and a focus on security.*
