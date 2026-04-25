@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Vyomesh Chauhan, a Cybersecurity Student creating digital experiences with real impact.">
+    <title>Vyomesh Chauhan | Cybersecurity Student</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Devicon for tech stack icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dynamic Star Background -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- EDIT: Update your brand name below -->
+            <a href="#" class="brand">Vyomesh<span class="dot">.</span></a>
+
+            <ul class="nav-links">
+                <!-- EDIT: Update navigation links if needed -->
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#classlogs">Class logs</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+                <li><a href="Vyomesh_Chauhan_Resumef2.pdf" target="_blank" class="resume-link">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <!-- EDIT: Update greeting -->
+            <p class="greeting">Hey, I'm</p>
+
+            <!-- EDIT: Update your name -->
+            <h1 class="name">VYOMESH CHAUHAN</h1>
+
+            <!-- EDIT: Update your title/role -->
+            <div class="role-badge">Cybersecurity Student</div>
+
+            <!-- EDIT: Update your subtitle/tagline. 
+                 Wrap words in <em> for the accent color. -->
+            <p class="subtitle">
+                I learn to break things<br>
+                so others can build them <em></em>safer</em>
+            </p>
+
+            <div class="cta-container">
+                <!-- EDIT: Update button text and link -->
+                <a href="#contact" class="btn-primary">
+                    Let's Connect <span class="arrow">→</span>
+                </a>
+
+                <!-- EDIT: Update your email address -->
+                <div class="email-container" onclick="copyEmail()">
+                    <span id="email-text">vyomeshchauhan80@gmail.com</span>
+                    <button class="copy-btn" aria-label="Copy Email">
+                        <svg class="copy-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 8C8 6.89543 8.89543 6 10 6H18C19.1046 6 20 6.89543 20 8V16C20 17.1046 19.1046 18 18 18H10C8.89543 18 8 17.1046 8 16V8Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 6V4C16 2.89543 15.1046 2 14 2H6C4.89543 2 4 2.89543 4 4V12C4 13.1046 4.89543 14 6 14H8"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <span class="tooltip" id="copy-tooltip">Copied!</span>
+                </div>
+                
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/vyomesh-chauhan" target="_blank" class="linkedin-link" aria-label="LinkedIn Profile" style="color: #0a66c2; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; padding: 0.5rem; transition: color 0.3s ease;">
+                    <i class="devicon-linkedin-plain" style="transition: color 0.3s ease;" onmouseover="this.style.color='#0077b5'" onmouseout="this.style.color='#0a66c2'"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2>About Me<span class="dot">.</span></h2>
+            <p class="section-subtitle">Get to know me better</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-image">
+                <!-- EDIT: Update this image source to your own photo -->
+                <img src="D:\profile.jpeg" alt="Vyomesh Chauhan">
+            </div>
+            <div class="about-text">
+                <!-- EDIT: Update your about me description here -->
+                <p>
+                    I'm a Cybersecurity student who genuinely loves breaking things down — finding where systems are
+                    weak and figuring out how to fix them. I'm learning ethical hacking and penetration testing, not
+                    just as skills, but because security puzzles actually excite me. I care about building things that
+                    don't just work — but stay safe.
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+                    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 1.2rem; text-align: center; transition: transform 0.3s ease;">
+                        <h4 style="color: var(--text-primary); font-size: 1rem; margin: 0 0 0.4rem 0; letter-spacing: 1px; text-transform: uppercase;">Section</h4>
+                        <p style="color: var(--accent-color); font-size: 1.4rem; font-weight: 600; margin: 0;">CS-1</p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 1.2rem; text-align: center; transition: transform 0.3s ease;">
+                        <h4 style="color: var(--text-primary); font-size: 1rem; margin: 0 0 0.4rem 0; letter-spacing: 1px; text-transform: uppercase;">Batch</h4>
+                        <p style="color: var(--accent-color); font-size: 1.4rem; font-weight: 600; margin: 0;">2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <h2>Skills<span class="dot">.</span></h2>
+            <p class="section-subtitle">A collection of technologies I'm proficient with</p>
+        </div>
+
+        <div class="skills-container">
+            <!-- Languages -->
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skills-list">
+                    <div class="skill-pill"><i class="devicon-c-plain colored"></i> C</div>
+                    <div class="skill-pill"><i class="devicon-cplusplus-plain colored"></i> C++</div>
+                    <div class="skill-pill"><i class="devicon-java-plain colored"></i> Java</div>
+                    <div class="skill-pill"><i class="devicon-python-plain colored"></i> Python</div>
+                    <div class="skill-pill"><i class="devicon-html5-plain colored"></i> HTML5</div>
+                    <div class="skill-pill"><i class="devicon-css3-plain colored"></i> CSS3</div>
+                    <div class="skill-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                </div>
+            </div>
+
+            <!-- Frameworks & Libraries -->
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skills-list">
+                    <div class="skill-pill"><i class="devicon-react-original colored"></i> React</div>
+                    <div class="skill-pill"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+                    <div class="skill-pill"><i class="devicon-prisma-original" style="color: white;"></i> Prisma</div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skills-list">
+                    <div class="skill-pill"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+                    <div class="skill-pill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+                    <div class="skill-pill"><i class="devicon-sqlite-plain colored"></i> SQLite</div>
+                </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skills-list">
+                    <div class="skill-pill"><i class="devicon-git-plain colored"></i> Git</div>
+                    <div class="skill-pill"><i class="devicon-amazonwebservices-plain-wordmark colored"
+                            style="font-size: 1.5em; margin-top: -5px;"></i></div>
+                    <div class="skill-pill"><i class="devicon-vercel-original" style="color: white;"></i> Vercel</div>
+                    <div class="skill-pill"><i class="devicon-supabase-plain colored"></i> Supabase</div>
+                    <div class="skill-pill"><i class="devicon-linux-plain"></i> Linux</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2>Projects<span class="dot">.</span></h2>
+            <p class="section-subtitle">Some things I've built</p>
+        </div>
+
+        <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
+            <div class="project-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 2.5rem; transition: transform 0.3s ease; aspect-ratio: 1 / 1; display: flex; flex-direction: column; max-width: 450px;">
+                <div class="project-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 class="project-title" style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 1rem;">File Compression Tool</h3>
+                    <p class="project-desc" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                        Built a file compression utility capable of reducing file sizes while maintaining data integrity across multiple formats (PDF, images, text, etc.). Implemented Huffman Coding, LZW, and zlib-based algorithms to achieve high compression ratios with lossless output.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Huffman</span>
+                        <span class="tech-tag">LZW</span>
+                        <span class="tech-tag">zlib</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 2.5rem; transition: transform 0.3s ease; aspect-ratio: 1 / 1; display: flex; flex-direction: column; max-width: 450px;">
+                <div class="project-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 class="project-title" style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 1rem;">Disk Scheduling Algorithm Simulator</h3>
+                    <p class="project-desc" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                        Developed a graphical simulator for disk scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN) to visually demonstrate sector access and head movement in real time. Reinforced foundational Operating Systems concepts by implementing algorithms in a hands-on programming environment.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 2.5rem; transition: transform 0.3s ease; aspect-ratio: 1 / 1; display: flex; flex-direction: column; max-width: 450px; grid-column: 1 / -1; justify-self: center; width: 100%;">
+                <div class="project-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 class="project-title" style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 1rem;">Suraksha</h3>
+                    <div class="project-desc" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; overflow-y: auto; padding-right: 0.5rem;">
+                        <p style="margin-bottom: 0.8rem;">Suraksha is an AI-powered tourist safety monitoring web application built to protect tourists in real-time using smart technology.</p>
+                        <p>The system combines AI-based surveillance, Geo-Fencing, and Blockchain-enabled Digital ID verification to monitor tourist activity, detect incidents instantly, and trigger real-time alerts to the right authorities — before situations escalate.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Prisma</span>
+                        <span class="tech-tag">Supabase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="Certificates">
+        <div class="section-header">
+            <h2>Certifications<span class="dot">.</span></h2>
+            <p class="section-subtitle">My professional qualifications and courses</p>
+        </div>
+
+        <div class="cert-grid">
+            <!-- Certificate 1 -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="D:\aa\Introduction-To-Internet-Of-Things\Introduction To Internet Of Things_page-0001.jpg"
+                        alt="Certificate 1">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Introduction to Internet of Things(IoT)</h3>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <!-- EDIT: Add your certificate thumbnail here -->
+                    <img src="D:\aa\Practical-Cyber-Security-for-Cyber-Security-Practitioners\Practical Cyber Security for Cyber Security Practitioners_page-0001.jpg"
+                        alt="Certificate 2">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Practical Cyber Security</h3>
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <!-- EDIT: Add your certificate thumbnail here -->
+                    <img src="D:\aa\graph.jpg" alt="Certificate 3">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Graph-E-Thon</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Logs Section -->
+    <section class="class-logs" id="classlogs">
+        <div class="section-header">
+            <h2>Class Logs<span class="dot">.</span></h2>
+            <p class="section-subtitle">My daily learnings and lecture notes</p>
+        </div>
+
+        <div class="log-container">
+            <!-- Day 01 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 01</span>
+                        <span class="log-date">Self Introduction</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Today's lecture focused on the art of Self Introduction — one of the most essential yet underestimated professional skills. The session was structured around the following key parameters:</p>
+                    
+                    <h4>1. Effective Communication Skill</h4>
+                    <p>A good self-introduction must be precise and to the point. Vague or lengthy introductions lose the listener's attention. Language must reflect clarity and be grammatically correct to leave a strong first impression.</p>
+                    
+                    <h4>2. Effective Presentation Skill</h4>
+                    <p>It is not just what we say, but how we convey our message that matters. Tone, pace, and word choice collectively shape how the audience perceives us.</p>
+                    
+                    <h4>3. Self Confidence</h4>
+                    <p>Confidence is the backbone of any introduction. Positive body language — eye contact, upright posture, and a steady voice — communicates assurance even before words are spoken. This applies across both formal settings (interviews, seminars) and informal environments (networking, social gatherings).</p>
+                    
+                    <h4>4. Structural Speech</h4>
+                    <p>Every introduction must have a clear opening (who you are) and a purposeful closing (what you bring to the table), ensuring the listener walks away with a memorable impression.</p>
+                    
+                    <h4>5. Positive Body Language</h4>
+                    <p>Body language speaks louder than words. Maintaining eye contact, an upright posture, a warm smile, and open gestures significantly enhance the impact of a self-introduction. Avoiding crossed arms, fidgeting, or looking away builds trust and shows genuine confidence in any setting.</p>
+                </div>
+            </div>
+
+            <!-- Day 02 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 02</span>
+                        <span class="log-date">My Self Introduction</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>In this session, I delivered my personal self-introduction. Below is the recording of my presentation.</p>
+                    
+                    <!-- Video Upload -->
+                    <div class="video-container" style="margin-top: 1.5rem; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); display: flex; justify-content: center; background-color: #000;">
+                        <video controls style="max-width: 100%; max-height: 60vh; width: auto; height: auto; display: block; border-radius: 10px;">
+                            <source src="My_Introduction.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 03 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 03</span>
+                        <span class="log-date">Pitch a product</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Most people don't fail at their jobs because they lack skill. They fail because they're drowning in repetitive tasks, missed follow-ups, scattered schedules, and mental overload. Comet fixes that.</p>
+                    <p>At its core, Comet lives inside your workflow. It reads your emails, schedules your meetings, prioritizes your tasks, and follows up on things you forgot — all without you asking twice. Think of it less like a tool and more like a silent coworker who never sleeps.</p>
+                    <p>What makes Comet different? It doesn't just automate tasks — it learns your patterns. The more you use it, the smarter it gets. It knows you respond to clients before 10am. It knows Friday afternoons are your deep work hours. It adapts.</p>
+                    <p>Comet connects with tools you already use — Notion, Slack, Gmail, Calendar — and stitches them together into one intelligent flow.</p>
+                    <p>No more context switching. No more dropping the ball. Just focused, intentional work.</p>
+                    <p>Comet doesn't replace you. It removes everything that gets in your way.</p>
+                    <p>Your work life, on autopilot.</p>
+                </div>
+            </div>
+
+            <!-- Day 04 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 04</span>
+                        <span class="log-date">Blockchain Beyond Cryptocurrency</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Most people hear blockchain and immediately think Bitcoin. But that's like hearing 'internet' and only thinking about email. One small use case of something enormous.</p>
+                    <p>Blockchain is so much bigger than that.</p>
+                    <p>At its core, blockchain is a system of recording information that nobody can hack, change, or cheat. It's a digital ledger — transparent, decentralized, and permanent. Every entry is locked in. Every transaction is visible. And no single person, company, or government controls it.</p>
+                    <p>Now apply that to real life.</p>
+                    <p>Hospitals using blockchain to secure patient records — so your medical history can't be altered, leaked, or lost. Governments running tamper-proof elections — where every vote is recorded and nobody can stuff the ballot. Supply chains tracking every single step a product takes — from the factory floor to your doorstep — so you actually know what you're buying and where it came from.</p>
+                    <p>Artists protecting their work through NFTs — finally owning their own creativity in a digital world that constantly steals it. Students having their college degrees verified on blockchain — so no one can ever fake a certificate again.</p>
+                    <p>And here's what ties all of this together.</p>
+                    <p>The technology isn't about currency. It was never really about currency. It's about trust.</p>
+                    <p>Think about how many systems in our world rely on a middleman. A bank to verify your money. A notary to verify your documents. A government to verify your identity. Blockchain removes that middleman entirely. It makes trust automatic. Mathematical. Unbreakable.</p>
+                    <p>In a world where data gets manipulated, systems get hacked, and people in power rewrite narratives — blockchain offers something genuinely rare.</p>
+                    <p>A record that tells the truth.</p>
+                    <p>Not because someone promised it would. Not because a company guarantees it. But because the math behind it makes lying literally impossible.</p>
+                    <p>And that — in a world full of misinformation and broken systems — that changes everything.</p>
+                </div>
+            </div>
+
+            <!-- Day 05 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 05</span>
+                        <span class="log-date">Essay Writing</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Sir started by explaining that essay writing directly improves our communication skills. As CSE students we constantly need to explain technical ideas — in exams, reports, or team meetings. Writing trains us to organize thoughts logically and explain complex concepts clearly to both technical and non-technical audiences.</p>
+                    <p>He also pointed out how essay writing helps in academic success — whether it's descriptive exam answers, research assignments, or seminar reports. It's a skill we use more than we realize.</p>
+                    <p>One thing that really stood out was how writing builds critical and analytical thinking. It trains you to analyze problems deeply, compare different technologies or approaches, and form well-reasoned arguments — which directly connects to algorithm design and problem-solving in CSE.</p>
+                    <p>Sir also highlighted that real-world software engineers write constantly — documentation, system design explanations, user manuals. Essay writing builds exactly the clarity and precision that good documentation demands.</p>
+                    <p>For placements and higher studies, strong writing matters too — SOPs, research proposals, HR rounds — companies value engineers who can think well and express clearly.</p>
+                    <p>And looking long term, as we grow into leadership roles, writing becomes how we propose ideas, lead teams, and present strategies. Sir summed it up well — essay writing lays the foundation for professional growth and communication.</p>
+                    <p>Finally, he mentioned something simple but true — when you can express your thoughts clearly, your confidence grows. And confidence shows up everywhere — in public speaking, in interviews, in your overall personality.</p>
+                    <p>The big takeaway from today's class — essay writing isn't just an English exercise. For a CSE student, it's a core professional skill.</p>
+                </div>
+            </div>
+
+            <!-- Day 06 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 06</span>
+                        <span class="log-date">Group Discussion</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Today sir taught us the key techniques of Group Discussion and how to perform confidently and effectively in a GD round.</p>
+                    <p>Here's what was covered in class:</p>
+                    <p>Sir started by clearing a common misconception — GD is not about who talks the most, it's about who adds the most value. That one line changed how I thought about it.</p>
+                    <p>He walked us through five core techniques. First, how you enter matters — if you get a chance to speak early, take it with a strong point or fact, not just a repetition of the topic. If you can't open, build on what others say — it shows you're both listening and thinking.</p>
+                    <p>Second, quality beats quantity. Speaking fewer times with meaningful points is far better than talking constantly with nothing valuable. Evaluators watch your thinking, not your word count.</p>
+                    <p>Third, body language plays a huge role — sitting forward, making eye contact with the group, and staying engaged even when not speaking all signal confidence and leadership.</p>
+                    <p>Fourth, sir emphasized never getting aggressive or personal. Disagreeing is healthy but always frame it respectfully — "I see it differently" rather than "You're wrong."</p>
+                    <p>Fifth and finally, learn to summarize. Closing a GD with a crisp neutral summary covering all sides shows maturity and listening ability — exactly what evaluators look for.</p>
+                    <p>The big takeaway from today's class — a GD tests whether you can think on your feet and work with people at the same time. Prepare your thoughts, respect the room, and speak with purpose.</p>
+                </div>
+            </div>
+
+            <!-- Day 07 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 07</span>
+                        <span class="log-date">GD on Data Privacy</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Today in class we had a Group Discussion on Data Privacy — here are the points I contributed and how I approached the GD.</p>
+                    
+                    <h4>Point 1 — Third Party Compromise</h4>
+                    <p>My first point was about how most data breaches don't happen from the main company itself — it's the third parties they share our data with. You trust one app, but that app quietly shares your data with ten others. When any one of those gets compromised, your information is already gone — and you never even knew it was there.</p>
+                    
+                    <h4>Point 2 — Users Don't Read What They Sign</h4>
+                    <p>I raised that every app shows a Terms & Conditions page but nobody actually reads it. By clicking "I Agree" we willingly hand over our location, contacts, browsing habits and sometimes even microphone access. The threat isn't always hackers — sometimes it's our own carelessness.</p>
+                    
+                    <h4>Point 3 — Governments Are Not Always the Solution</h4>
+                    <p>When someone in the GD suggested governments should fix data privacy, I countered that governments themselves are often the ones collecting our data. Surveillance laws and data retention policies mean your private information is legally accessible to authorities — without you ever knowing.</p>
+                    
+                    <h4>Point 4 — Data Privacy Is a Myth (Closing Statement)</h4>
+                    <p>I closed the GD with this — and I meant it. Data privacy at this point is not just a risk or a concern — it's a myth. Your phone listens, your searches get tracked, your data gets packaged and sold to people you've never met. The question now isn't how do we protect privacy — it's how do we survive without it.</p>
+                </div>
+            </div>
+
+            <!-- Day 08 -->
+            <div class="log-card">
+                <div class="log-header">
+                    <div class="log-header-left">
+                        <span class="log-day">Day 08</span>
+                        <span class="log-date">ATS Resume Writing</span>
+                    </div>
+                </div>
+                <div class="log-content">
+                    <p>Today sir taught us how to write a resume that actually gets past ATS — Applicant Tracking System — the software companies use to filter resumes before a human even sees them. This was genuinely one of the most practical classes so far.</p>
+                    <p>Here's what was covered:</p>
+                    <p>Sir started with format. Always use a single column resume — no tables, no text boxes, no graphics, no icons. Just one clean vertical flow of text. File format should be either .docx or a text-based PDF, never a scanned or image-based resume.</p>
+                    <p>Next he covered headings. Always use standard conventional headings like Professional Summary, Skills, Work Experience, Education, Certifications and Projects. Creative headings like "My Journey" or "What I Bring" confuse ATS systems and get rejected instantly.</p>
+                    <p>One of the most important points was keyword optimization. ATS literally scores your resume by matching it against the job description. Sir said — copy the exact keywords from the JD and place them naturally in your summary, skills and experience sections. If the job says Python, SQL, Power BI — your resume needs those exact words.</p>
+                    <p>For the Skills section, always keep it as a dedicated bullet list — never write skills in paragraph form. Separate technical and soft skills clearly.</p>
+                    <p>Sir also taught us to quantify achievements instead of listing duties. Don't say "responsible for teaching students" — say "taught communication skills to 120+ students with 95% completion rate." Numbers make you credible.</p>
+                    <p>Font wise — stick to Calibri, Arial, Times New Roman or Verdana. Body text 10.5 to 12, headings 13 to 14. And avoid ATS killers — no photos, no columns, no fancy templates, no icons, and never put important information in headers or footers.</p>
+                    <p>The golden rule sir gave us — Simple format plus exact keywords plus customization for every job. Target a minimum ATS score of 75% and aim for 85 to 95% for a strong profile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Text Modal for Class Logs -->
+    <div id="textModal" class="modal">
+        <span class="close-text-modal">&times;</span>
+        <div class="modal-text-content">
+            <h2 id="textModalTitle"></h2>
+            <div id="textModalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
